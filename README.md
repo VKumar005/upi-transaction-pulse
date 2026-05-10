@@ -105,14 +105,16 @@ python -m venv venv
 venv\Scripts\activate        # Windows
 pip install -r requirements.txt
 ```
-
 ### 3. Configure environment variables
 Create a `.env` file in the root folder:
+```
 DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=upi_analytics
 DB_USER=postgres
 DB_PASSWORD=your_password
+```
+
 ### 4. Set up PostgreSQL
 ```sql
 CREATE DATABASE upi_analytics;

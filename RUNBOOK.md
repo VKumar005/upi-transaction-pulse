@@ -81,11 +81,13 @@ SELECT 'transactions', COUNT(*) FROM transactions;
 python scripts/generate_data.py
 ```
 Expected output:
+```
 States:            20
 Merchants:        500
 Users:          5,000
 Time rows:     17,521
 Transactions: 500,000
+```
 Expected time: 3–5 minutes
 
 ### Regenerate with different seed
