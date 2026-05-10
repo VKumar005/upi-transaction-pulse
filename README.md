@@ -139,34 +139,39 @@ sql/04_user_behaviour.sql
 - Use year and state slicers to filter all 4 pages
 
 ---
-
 ## Project Structure
+```
 upi-transaction-pulse/
+├── architecture/
+│   └── architecture.png
 ├── data/
 │   ├── raw/
-│   │   └── rbi_reference.md        # RBI data reference & methodology
-│   └── generated/                  # Generated CSVs (gitignored)
+│   │   └── rbi_reference.md
+│   └── generated/
 ├── sql/
-│   ├── 01_schema.sql               # Star schema DDL
-│   ├── 02_fraud_analysis.sql       # 6 fraud queries
-│   ├── 03_merchant_analysis.sql    # 5 merchant queries
-│   └── 04_user_behaviour.sql       # 6 user & adoption queries
+│   ├── 01_schema.sql
+│   ├── 02_fraud_analysis.sql
+│   ├── 03_merchant_analysis.sql
+│   └── 04_user_behaviour.sql
 ├── scripts/
-│   ├── generate_data.py            # Faker data simulation + DB loader
-│   ├── load_to_postgres.py         # Modular loader reference
-│   └── test_connection.py          # DB connection test
+│   ├── generate_data.py
+│   ├── load_to_postgres.py
+│   └── test_connection.py
 ├── notebooks/
-│   └── eda.ipynb                   # Exploratory data analysis
+│   └── eda.ipynb
 ├── dashboard/
-│   └── upi_pulse.pbix              # Power BI dashboard (4 pages)
-├── architecture/
-│   └── architecture.png    
-├── screenshots/                    # Dashboard page previews
-├── .env                            # DB credentials (not tracked)
+│   └── README.md
+├── screenshots/
+│   ├── 01_executive_overview.png
+│   ├── 02_fraud_intelligence.png
+│   ├── 03_merchant_analytics.png
+│   └── 04_digital_adoption.png
+├── .env
 ├── .gitignore
 ├── requirements.txt
-├── RUNBOOK.md                      # Step-by-step operations guide
+├── RUNBOOK.md
 └── README.md
+```
 ---
 
 ## Author
